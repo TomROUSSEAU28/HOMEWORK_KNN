@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build",
+  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DRESOURCES_PATH=\\\"/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/resources/\\\" -I/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project -g -std=gnu++20 -flto=auto -fno-fat-lto-objects -o CMakeFiles/HOMEWORK.dir/project/Data.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Data.cpp",
+  "file": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Data.cpp",
+  "output": "CMakeFiles/HOMEWORK.dir/project/Data.cpp.o"
+},
+{
+  "directory": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build",
+  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DRESOURCES_PATH=\\\"/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/resources/\\\" -I/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project -g -std=gnu++20 -flto=auto -fno-fat-lto-objects -o CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/FeatureVector.cpp",
+  "file": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/FeatureVector.cpp",
+  "output": "CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o"
+},
+{
+  "directory": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build",
+  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DRESOURCES_PATH=\\\"/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/resources/\\\" -I/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project -g -std=gnu++20 -flto=auto -fno-fat-lto-objects -o CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Sample.cpp",
+  "file": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Sample.cpp",
+  "output": "CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o"
+},
+{
+  "directory": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build",
+  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DRESOURCES_PATH=\\\"/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/resources/\\\" -I/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project -g -std=gnu++20 -flto=auto -fno-fat-lto-objects -o CMakeFiles/HOMEWORK.dir/project/main.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/main.cpp",
+  "file": "/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/main.cpp",
+  "output": "CMakeFiles/HOMEWORK.dir/project/main.cpp.o"
+}
+]
