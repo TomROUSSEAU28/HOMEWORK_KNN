@@ -69,10 +69,24 @@ include CMakeFiles/HOMEWORK.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HOMEWORK.dir/flags.make
 
+CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
+CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ClassificationReport.cpp
+CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ClassificationReport.cpp
+
+CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ClassificationReport.cpp > CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.i
+
+CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ClassificationReport.cpp -o CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.s
+
 CMakeFiles/HOMEWORK.dir/project/Data.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
 CMakeFiles/HOMEWORK.dir/project/Data.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Data.cpp
 CMakeFiles/HOMEWORK.dir/project/Data.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HOMEWORK.dir/project/Data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HOMEWORK.dir/project/Data.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/Data.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/Data.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/Data.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Data.cpp
 
 CMakeFiles/HOMEWORK.dir/project/Data.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/HOMEWORK.dir/project/Data.cpp.s: cmake_force
 CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
 CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/FeatureVector.cpp
 CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/FeatureVector.cpp
 
 CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.i: cmake_force
@@ -97,10 +111,80 @@ CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/FeatureVector.cpp -o CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.s
 
+CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
+CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Knn.cpp
+CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Knn.cpp
+
+CMakeFiles/HOMEWORK.dir/project/Knn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HOMEWORK.dir/project/Knn.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Knn.cpp > CMakeFiles/HOMEWORK.dir/project/Knn.cpp.i
+
+CMakeFiles/HOMEWORK.dir/project/Knn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/Knn.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Knn.cpp -o CMakeFiles/HOMEWORK.dir/project/Knn.cpp.s
+
+CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
+CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnCosine.cpp
+CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnCosine.cpp
+
+CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnCosine.cpp > CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.i
+
+CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnCosine.cpp -o CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.s
+
+CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
+CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnEuclidean.cpp
+CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnEuclidean.cpp
+
+CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnEuclidean.cpp > CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.i
+
+CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnEuclidean.cpp -o CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.s
+
+CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
+CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnManhattan.cpp
+CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnManhattan.cpp
+
+CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnManhattan.cpp > CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.i
+
+CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/KnnManhattan.cpp -o CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.s
+
+CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
+CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ProgressBar.cpp
+CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ProgressBar.cpp
+
+CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ProgressBar.cpp > CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.i
+
+CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/ProgressBar.cpp -o CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.s
+
 CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
 CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Sample.cpp
 CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/Sample.cpp
 
 CMakeFiles/HOMEWORK.dir/project/Sample.cpp.i: cmake_force
@@ -114,7 +198,7 @@ CMakeFiles/HOMEWORK.dir/project/Sample.cpp.s: cmake_force
 CMakeFiles/HOMEWORK.dir/project/main.cpp.o: CMakeFiles/HOMEWORK.dir/flags.make
 CMakeFiles/HOMEWORK.dir/project/main.cpp.o: /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/main.cpp
 CMakeFiles/HOMEWORK.dir/project/main.cpp.o: CMakeFiles/HOMEWORK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HOMEWORK.dir/project/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HOMEWORK.dir/project/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HOMEWORK.dir/project/main.cpp.o -MF CMakeFiles/HOMEWORK.dir/project/main.cpp.o.d -o CMakeFiles/HOMEWORK.dir/project/main.cpp.o -c /home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project/main.cpp
 
 CMakeFiles/HOMEWORK.dir/project/main.cpp.i: cmake_force
@@ -127,21 +211,35 @@ CMakeFiles/HOMEWORK.dir/project/main.cpp.s: cmake_force
 
 # Object files for target HOMEWORK
 HOMEWORK_OBJECTS = \
+"CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o" \
 "CMakeFiles/HOMEWORK.dir/project/Data.cpp.o" \
 "CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o" \
+"CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o" \
+"CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o" \
+"CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o" \
+"CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o" \
+"CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o" \
 "CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o" \
 "CMakeFiles/HOMEWORK.dir/project/main.cpp.o"
 
 # External object files for target HOMEWORK
 HOMEWORK_EXTERNAL_OBJECTS =
 
+HOMEWORK: CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o
 HOMEWORK: CMakeFiles/HOMEWORK.dir/project/Data.cpp.o
 HOMEWORK: CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.o
+HOMEWORK: CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o
+HOMEWORK: CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o
+HOMEWORK: CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o
+HOMEWORK: CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o
+HOMEWORK: CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o
 HOMEWORK: CMakeFiles/HOMEWORK.dir/project/Sample.cpp.o
 HOMEWORK: CMakeFiles/HOMEWORK.dir/project/main.cpp.o
 HOMEWORK: CMakeFiles/HOMEWORK.dir/build.make
+HOMEWORK: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
+HOMEWORK: /usr/lib/x86_64-linux-gnu/libpthread.a
 HOMEWORK: CMakeFiles/HOMEWORK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HOMEWORK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable HOMEWORK"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HOMEWORK.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

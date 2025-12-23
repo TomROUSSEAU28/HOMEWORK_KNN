@@ -3,11 +3,26 @@
 #include <cstdint>
 #include <memory.h>
 #include <memory>
+
+
+/**
+ * @brief Représente les données d'entrainements
+ * @details Stocke les données pour le knn
+ */
 class Data{
 private:
     uint32_t m_nbFeatures;                          /**< Nombre de caractéristiques par sample */
     uint32_t m_nbSamples;                           /**< Nombre de samples aux totals   */
     std::vector<std::unique_ptr<Sample>> m_data;    /**< Vecteur qui stocke les samples */
+
+    std::vector<double> m_max;  /**< Vecteur qui stocke les max de chaque colonnes pour les vecteurs de caracteristiques */
+    std::vector<double> m_min;  /**< Vecteur qui stocke les min de chaque colonnes pour les vecteurs de caracteristiques */
+
+    
+
+
+
+
    
 public:
     Data();
@@ -39,22 +54,65 @@ public:
     const std::vector<std::unique_ptr<Sample>>& GetData() const {return m_data;}
 
 
+    const std::vector<double>& GetMax() const {return m_max;}
+    const std::vector<double>& GetMin() const {return m_min;}
+
+ 
 
      /* ===== METHODES MEMBRES ===== */
 
 
     /**
      * @brief Charge les données pour crées des samples.
+     * @details Retourne une exeption en cas d'echec
+     */
+    void LoadFile(const char* dir);
+
+
+    /**
+     * @brief Charge les données pour crées des samples format creux.
+     * @details Retourne une exeption en cas d'echec
+     */
+    void LoadFileHollow(const char* dir);
+
+
+    /**
+     * @brief Update m_max et m_min
      * 
      */
-    bool LoadFile(const char* dir);
+    void UpdateMinMax();
+
+
+    /**
+     * @brief Update tous les Features vecteur
+     * 
+     */
+    void UpdateNormalizedVector();
+
+    /**
+     * @brief Update tous les Features vecteur à partir de max et min d'un autre
+     * 
+     */
+    void updateNormalizedVectorWith(const std::vector<double>& max, const std::vector<double>& min);
 
 
     /**
      * @brief Affiche toutes les données 
      */
     void PrintDebug()const noexcept;
- 
+
+
+    /**
+     * @brief Réduit la dimention des données
+     */
+    const std::vector<bool> ReduceDimension(const double threshold = 0.1f);
+
+    /**
+    * @brief Réduit la dimention des données a partir d'un autre jeux de donnée, supprime les donnée non gardé par l'autre jeu de données
+    */
+    void ReduceDimensionWith(const std::vector<bool>& dataKept, const std::vector<double>& max, const std::vector<double>& min);
+
+	
 
     /* ===== SURCHARGE DES OPERATEURS ===== */
 
@@ -64,5 +122,11 @@ public:
     * @return Référence constante vers le sample à l'indice donné.
     */
     const Sample& operator[](uint32_t index) const noexcept;
+
+    private:
+	/**
+	* @brief Supprime une variable du jeu de donnée
+	*/
+	void popVar(const uint32_t index);
 
 };

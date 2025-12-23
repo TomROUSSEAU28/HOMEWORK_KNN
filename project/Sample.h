@@ -14,6 +14,8 @@ class Sample {
 private:
     uint32_t m_tag;             /**< tag qui correspond aux caractéristiques */
     FeatureVector m_features;   /**< Vecteur de caractéristiques */
+
+
 public:
 
     /* ===== CONSTRUCTEUR DESTRUCTEUR ===== */
@@ -44,6 +46,14 @@ public:
     const FeatureVector& GetFeatures() const {return m_features;}
 
 
+    /**
+     * @brief Récupère en lecture et écriture le vecteur de caracteristique 
+     * @param m_features : le vecteur de caracteristique
+     * @return le vecteur de caracteristique
+     */
+    FeatureVector& GetFeatures() {return m_features;}
+
+
     /* ===== METHODES MEMBRES ===== */
 
     /**
@@ -51,7 +61,7 @@ public:
      */
     void PrintDebug()const noexcept;
 
-
+    
 
      /* ===== SURCHARGE DES OPERATEURS ===== */
 
@@ -61,6 +71,8 @@ public:
     * @return Référence constante vers la valeur à l'indice donné.
     */
     const double& operator[](uint32_t index) const noexcept;
+
+
 
 
 };

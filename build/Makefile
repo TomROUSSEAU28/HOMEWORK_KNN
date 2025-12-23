@@ -130,6 +130,30 @@ HOMEWORK/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/build
 .PHONY : HOMEWORK/fast
 
+project/ClassificationReport.o: project/ClassificationReport.cpp.o
+.PHONY : project/ClassificationReport.o
+
+# target to build an object file
+project/ClassificationReport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.o
+.PHONY : project/ClassificationReport.cpp.o
+
+project/ClassificationReport.i: project/ClassificationReport.cpp.i
+.PHONY : project/ClassificationReport.i
+
+# target to preprocess a source file
+project/ClassificationReport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.i
+.PHONY : project/ClassificationReport.cpp.i
+
+project/ClassificationReport.s: project/ClassificationReport.cpp.s
+.PHONY : project/ClassificationReport.s
+
+# target to generate assembly for a file
+project/ClassificationReport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/ClassificationReport.cpp.s
+.PHONY : project/ClassificationReport.cpp.s
+
 project/Data.o: project/Data.cpp.o
 .PHONY : project/Data.o
 
@@ -177,6 +201,126 @@ project/FeatureVector.s: project/FeatureVector.cpp.s
 project/FeatureVector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/FeatureVector.cpp.s
 .PHONY : project/FeatureVector.cpp.s
+
+project/Knn.o: project/Knn.cpp.o
+.PHONY : project/Knn.o
+
+# target to build an object file
+project/Knn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/Knn.cpp.o
+.PHONY : project/Knn.cpp.o
+
+project/Knn.i: project/Knn.cpp.i
+.PHONY : project/Knn.i
+
+# target to preprocess a source file
+project/Knn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/Knn.cpp.i
+.PHONY : project/Knn.cpp.i
+
+project/Knn.s: project/Knn.cpp.s
+.PHONY : project/Knn.s
+
+# target to generate assembly for a file
+project/Knn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/Knn.cpp.s
+.PHONY : project/Knn.cpp.s
+
+project/KnnCosine.o: project/KnnCosine.cpp.o
+.PHONY : project/KnnCosine.o
+
+# target to build an object file
+project/KnnCosine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.o
+.PHONY : project/KnnCosine.cpp.o
+
+project/KnnCosine.i: project/KnnCosine.cpp.i
+.PHONY : project/KnnCosine.i
+
+# target to preprocess a source file
+project/KnnCosine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.i
+.PHONY : project/KnnCosine.cpp.i
+
+project/KnnCosine.s: project/KnnCosine.cpp.s
+.PHONY : project/KnnCosine.s
+
+# target to generate assembly for a file
+project/KnnCosine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnCosine.cpp.s
+.PHONY : project/KnnCosine.cpp.s
+
+project/KnnEuclidean.o: project/KnnEuclidean.cpp.o
+.PHONY : project/KnnEuclidean.o
+
+# target to build an object file
+project/KnnEuclidean.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.o
+.PHONY : project/KnnEuclidean.cpp.o
+
+project/KnnEuclidean.i: project/KnnEuclidean.cpp.i
+.PHONY : project/KnnEuclidean.i
+
+# target to preprocess a source file
+project/KnnEuclidean.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.i
+.PHONY : project/KnnEuclidean.cpp.i
+
+project/KnnEuclidean.s: project/KnnEuclidean.cpp.s
+.PHONY : project/KnnEuclidean.s
+
+# target to generate assembly for a file
+project/KnnEuclidean.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnEuclidean.cpp.s
+.PHONY : project/KnnEuclidean.cpp.s
+
+project/KnnManhattan.o: project/KnnManhattan.cpp.o
+.PHONY : project/KnnManhattan.o
+
+# target to build an object file
+project/KnnManhattan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.o
+.PHONY : project/KnnManhattan.cpp.o
+
+project/KnnManhattan.i: project/KnnManhattan.cpp.i
+.PHONY : project/KnnManhattan.i
+
+# target to preprocess a source file
+project/KnnManhattan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.i
+.PHONY : project/KnnManhattan.cpp.i
+
+project/KnnManhattan.s: project/KnnManhattan.cpp.s
+.PHONY : project/KnnManhattan.s
+
+# target to generate assembly for a file
+project/KnnManhattan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/KnnManhattan.cpp.s
+.PHONY : project/KnnManhattan.cpp.s
+
+project/ProgressBar.o: project/ProgressBar.cpp.o
+.PHONY : project/ProgressBar.o
+
+# target to build an object file
+project/ProgressBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.o
+.PHONY : project/ProgressBar.cpp.o
+
+project/ProgressBar.i: project/ProgressBar.cpp.i
+.PHONY : project/ProgressBar.i
+
+# target to preprocess a source file
+project/ProgressBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.i
+.PHONY : project/ProgressBar.cpp.i
+
+project/ProgressBar.s: project/ProgressBar.cpp.s
+.PHONY : project/ProgressBar.s
+
+# target to generate assembly for a file
+project/ProgressBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HOMEWORK.dir/build.make CMakeFiles/HOMEWORK.dir/project/ProgressBar.cpp.s
+.PHONY : project/ProgressBar.cpp.s
 
 project/Sample.o: project/Sample.cpp.o
 .PHONY : project/Sample.o
@@ -235,12 +379,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HOMEWORK"
+	@echo "... project/ClassificationReport.o"
+	@echo "... project/ClassificationReport.i"
+	@echo "... project/ClassificationReport.s"
 	@echo "... project/Data.o"
 	@echo "... project/Data.i"
 	@echo "... project/Data.s"
 	@echo "... project/FeatureVector.o"
 	@echo "... project/FeatureVector.i"
 	@echo "... project/FeatureVector.s"
+	@echo "... project/Knn.o"
+	@echo "... project/Knn.i"
+	@echo "... project/Knn.s"
+	@echo "... project/KnnCosine.o"
+	@echo "... project/KnnCosine.i"
+	@echo "... project/KnnCosine.s"
+	@echo "... project/KnnEuclidean.o"
+	@echo "... project/KnnEuclidean.i"
+	@echo "... project/KnnEuclidean.s"
+	@echo "... project/KnnManhattan.o"
+	@echo "... project/KnnManhattan.i"
+	@echo "... project/KnnManhattan.s"
+	@echo "... project/ProgressBar.o"
+	@echo "... project/ProgressBar.i"
+	@echo "... project/ProgressBar.s"
 	@echo "... project/Sample.o"
 	@echo "... project/Sample.i"
 	@echo "... project/Sample.s"

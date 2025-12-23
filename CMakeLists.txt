@@ -5,6 +5,8 @@ set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE) #link time optimization
 
 project(HOMEWORK)
 
+find_package(OpenMP REQUIRED)
+
 file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/project/*.cpp")
 
 add_executable("${CMAKE_PROJECT_NAME}")
@@ -17,4 +19,4 @@ target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURC
 
 target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC GLFW_INCLUDE_NONE=1) 
 
-
+target_link_libraries("${CMAKE_PROJECT_NAME}" PRIVATE OpenMP::OpenMP_CXX)

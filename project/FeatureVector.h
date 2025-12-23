@@ -10,16 +10,27 @@
  */
 
 
+ /**
+ * @brief Workflow de préchargement des données :
+ * 1. Construction : FeatureVector(raw_data)
+ * 2. UpdateNormalizedVector(max, min)
+ * 3. NormalizeL2()
+ * 4. LockAfterNormalization()
+ * 
+ */
+
 class FeatureVector {
 
 private:
 
-    std::vector<double> m_featureVec;            /**< Vecteur de caractéristiques */
-    std::vector<double> m_normalized_featureVec; /**< Norme du vecteur de caractéristiques */
+    std::vector<double> m_featureVec;               /**< Vecteur de caractéristiques */
+    std::vector<double> m_normalized_featureVec;    /**< Vecteur de caractéristiques normalisé en Min Max */
+    std::vector<double> m_normalized_featureVec_L2; /**< Vecteur de caractéristiques normalisé en Min Max et normalisé L2 */
+    bool m_is_normalized = false;  /** Flag qui indique normalisation */
     
 public:
 
-
+    friend class Sample;
     /* ===== CONSTRUCTEUR DESTRUCTEUR ===== */
     FeatureVector();
 
@@ -35,6 +46,13 @@ public:
     /* ===== GETTERS SETTERS ===== */
     const std::vector<double>& GetData() const {return m_featureVec;}
     const std::vector<double>& GetDataNormalized() const {return m_normalized_featureVec;}
+    const std::vector<double>& GetDataNormalizedL2() const {return m_normalized_featureVec_L2;}
+
+	/* ===== GETTERS SETTERS ===== */
+	std::vector<double>& GetData() { return m_featureVec; }
+	std::vector<double>& GetDataNormalized() { return m_normalized_featureVec; }
+	std::vector<double>& GetDataNormalizedL2() { return m_normalized_featureVec_L2; }
+    
 
     /* ===== METHODES MEMBRES ===== */
 
@@ -44,9 +62,16 @@ public:
     void PrintDebug()const noexcept;
 
      /**
-     * @brief Met à jour le vecteur normalisé
+     * @brief Met à jour le vecteur normalisé (normalisation min max)
+     * 
      */
-    void UpdateNormalizedVector();
+    void UpdateNormalizedVector(const std::vector<double>& max, const std::vector<double>& min);
+
+    /**
+     * @brief Applique la normalisation L2 sur le vecteur normalisé
+     * 
+     */
+    void NormalizeL2();
 
     /**
      * @brief Calcule la norme du vecteur de features
@@ -54,21 +79,40 @@ public:
      */
     double Norme() const noexcept;
 
-    /**
-     * @brief Calcule le produit scalaire entre vecteur de features
-     * @param otherVector : Le vecteur à droite de l'opération
-     * @return Le résultat du produit scaire
-     */
-    double DotProduct(const FeatureVector& otherVector) const;
 
     /**
-    * @brief Calcule le produit scalaire entre vecteur de features normamisé
+     * @brief Calcule la norme du vecteur normalisé min max
+     * @return La norme 
+     */
+    double NormeNormalized() const noexcept;
+
+    /**
+    * @brief Calcule le produit scalaire entre vecteur de features normamisé min max et L2
     * @param otherVector : Le vecteur à droite de l'opération
     * @return Le résultat du produit scaire
     */
-    double DotProductNormalized(const FeatureVector& otherVector) const;
-    
+    double DotProductNormalizedL2(const FeatureVector& otherVector) const;
 
+    /**
+     * @brief Permet d'indiquer que les vecteurs normalisés ont était généré.
+     */
+    void LockAfterNormalization() { m_is_normalized = true; }
+    
+    /**
+     * @brief Calcule la distance euclidean entre vecteur normalisé min max
+     * 
+     * @param other
+     * @return double
+     */
+    double EuclideanDistanceNormalized(const FeatureVector& other) const;
+
+    /**
+     * @brief Calcule la distance manhattan entre vecteur normalisé min max 
+     * 
+     * @param other 
+     * @return double 
+     */
+    double ManhattanDistanceNormalized(const FeatureVector& other) const;
     // Reprise des methodes STL pour manipuler m_featureVec
     /**
      * @brief Calcule le taille du vecteur 
@@ -78,14 +122,12 @@ public:
 
 
      /**
-     * @brief Acces aux iterateurs sur le vecteur de features
+     * @brief Acces aux iterateurs sur le vecteur de features, version const car non modifiable
      * @return L'iterateur
      */
     using iterator = std::vector<double>::iterator;
     using const_iterator = std::vector<double>::const_iterator;
-    iterator begin() noexcept;
     const_iterator begin() const noexcept;
-    iterator end() noexcept;
     const_iterator end() const noexcept;
 
     /**
@@ -94,11 +136,7 @@ public:
      */
     void reserve(uint32_t val);
 
-    /**
-     * @brief Permet d'ajouter une valeur à la fin du vecteur
-     * @param val : valeur à ajouter
-     */
-    void push_back(const double val);
+
    
 
     /* ===== SURCHARGE DES OPERATEURS ===== */
@@ -110,19 +148,6 @@ public:
     */
     const double& operator[](uint32_t index) const noexcept;
 
-    /**
-    * @brief Accède en lecture/écriture à la valeur du vecteur de caractéristiques (m_featureVec).
-    * @param index Indice de la composante à modifier.
-    * @return Référence vers la valeur à l'indice donné.
-    */
-    double& operator[](uint32_t index) noexcept;
-
-
-
-    /**
-     * @brief 
-     * 
-     */
-    
-    
+  
+		
 };

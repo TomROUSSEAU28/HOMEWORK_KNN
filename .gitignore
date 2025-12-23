@@ -1,0 +1,54 @@
+# --- Binaires et Compilation C++ ---
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.lib
+*.a
+
+# --- Dossiers de Build (CMake / Make) ---
+build/
+bin/
+lib/
+cmake-build-debug/
+cmake-build-release/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# --- Visual Studio & VS Code ---
+.vscode/
+.vs/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.pdb
+*.ipch
+x64/
+x86/
+Debug/
+Release/
+.cache/
+
+# --- Système d'exploitation ---
+.DS_Store
+Thumbs.db
+
+# --- DONNÉES (Très important pour ton projet) ---
+# On ignore les fichiers de datasets pour ne pas saturer le repo
+*.svm
+*.ssvm
+*.csv
+*.dat
+*.png
+*.jpg
+*.jpeg
+*.gif
+# Si tes données sont dans un dossier spécifique (ex: Resources), ignore le dossier entier :
+resources/
+doc/
+# Data/

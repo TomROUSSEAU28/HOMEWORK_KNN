@@ -6,5 +6,5 @@ CXX_DEFINES = -DGLFW_INCLUDE_NONE=1 -DRESOURCES_PATH=\"/home/tom/Documents/C_Pro
 
 CXX_INCLUDES = -I/home/tom/Documents/C_Project/C++/INSA/HOMEWORK/project
 
-CXX_FLAGS = -g -std=gnu++20 -flto=auto -fno-fat-lto-objects
+CXX_FLAGS = -g -std=gnu++20 -flto=auto -fno-fat-lto-objects -fopenmp
 
